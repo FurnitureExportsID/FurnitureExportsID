@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - CV. Kalika Integraha</title>
+    <link rel="stylesheet" href="Products.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h1>Our Products</h1>
+        <p>Discover Our Finely Crafted Furniture. We Use 100% Premium Mahogany Wood (Export Standart), Which Provides Strength, Durability, and Lasting Beauty.</p>
+        <p>Curious To Know More? Feel Free To Reach Out To Us, We’d Love To Help You Discover The Perfect Fit For Your Style and Needs!</p>
+        
+
+        <!-- Segment 1: Meja -->
+        <div class="product-segment">
+            <h2>Tables</h2>
+            <div class="product-row">
+                <div class="product">
+                    <img src="meja1.jpg" alt="Wooden Minimalist Table" onclick="openModal('meja1.jpg', 'Wooden Minimalist Table', 'Material : Premium Mahony Wood, Aproximate Dimensity : Length 175cm, Width 85cm, Height : 74cm, Color : Natural Brown (We Accept Request Colors), A timeless wooden table with a clean and minimalist design, perfect for any space, Notes : We Have Variant 145cm x 85cm, 73cm', ['meja1.jpg', 'meja1_2.jpg', 'meja1_3.jpg', 'meja1_5.jpg', 'meja1_6.jpg', 'meja1_4.jpg' ])">
+                    <p>Wooden Minimalist Table</p>
+                </div>
+                <div class="product">
+                    <img src="meja2.jpg" alt="Rustic Dining Table" onclick="openModal('meja2.jpg', 'Rustic Dining Table', 'Material : Premium Mahogany Wood, Approximate Dimensity : Length 170cm, Width 90cm, Height 74cm, Color : White (We Accept Request Colors), Suitable for Indoor Especially Dining Room Which Gives Elegance And Modern To The Room, Notes : We Have Variant 140cm x 90cm x 73cm', ['meja2.jpg', 'meja2_1.jpg', 'meja2_3.jpg','meja2_4.jpg','meja2_6.jpg'])">
+                    <p>Rustic Dining Table</p>
+                </div>
+                <div class="product">
+                    <img src="meja3.jpg" alt="Round Table Mahogany Savoia Turin - Diameter 70cm" onclick="openModal('meja3.jpg', 'Round Cafe Table Mahogany Savoia Turin - Diameter 70cm', 'Material : Premium Mahogany Wood, Approximate Dimensions : Diameter 70cm Height 73cm, Color : Check on Images (We accept Request colors), Suitable For Indoor And Outdoor Which Gives a Minimalist Impression To The Room.', ['meja3.jpg', 'meja3_3.jpg','meja3_4.jpg','meja3_2.jpg','meja3_6.jpg'])">
+                    <p>Round Table</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segment 2: Kursi -->
+        <div class="product-segment">
+            <h2>Chairs</h2>
+            <div class="product-row">
+                <div class="product">
+                    <img src="kursi1.jpg" alt="Classic Wood Chair" onclick="openModal('kursi1.jpg', 'Classic Wood Chair', 'Material : Premium Mahony Wood, Approximate Dimensity : Length 45,5cm, Width 44cm, Height 93cm/to seat 43,5cm, Color : White (We Accept Request Colors), Suitable for Indoor and Outdoor, Elevate your space with this minimalist chair elegance and modern simplicity to enhance any rooms aesthetic.', ['kursi1.jpg', 'kursi1_2.jpg', 'kursi1_3.jpg', 'kursi1_4.jpg','kursi1_5.jpg','kursi1_6.jpg','kursi1_7.jpg'])">
+                    <p>Classic Wood Chair</p>
+                </div>
+                <div class="product">
+                    <img src="kursi2.jpg" alt="Elegant Dining Chair" onclick="openModal('kursi2.jpg', 'Elegant Dining Chair', 'Material : Premium Mahony Wood, Approximate Dimensity : Length 52cm, Width 60cm, Height 98cm/to seat 47cm, Color : Check On Images (We Accept Request Colors), Suitable For Indoor, dining chair with wooden legs for bring elegance and luxury from mahogany wood to your room .', ['kursi2.jpg', 'kursi2_2.jpg', 'kursi2_3.jpg', 'kursi2_5.jpg', 'kursi2_6.jpg', 'kursi2_7.jpg'])">
+                    <p>Elegant Dining Chair</p>
+                </div>
+                <div class="product">
+                    <img src="kursi3.jpg" alt="Multi-Purpose Chair" onclick="openModal('kursi3.jpg', 'Multi-Purpose Chair', 'Material : Premium Mahony Wood, Approximate Dimensity : Length 67cm, Width 37cm, Height 42cm, Color : Natural Brown (We Accept Request Colors), A multi-purpose chair for indoor and outdoor, its small size means this chair doesnt take up a lot of room space and its minimalist design emphasizes the beauty of mahogany wood', ['kursi3.jpg', 'kursi3_2.jpg', 'kursi3_3.jpg', 'kursi3_4.jpg', 'kursi3_5.jpg', 'kursi3_6.jpg', 'kursi3_7.jpg'])">
+                    <p>Multi-Purpose Chair </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segment 3: Lemari -->
+        <div class="product-segment">
+            <h2>Wardrobes</h2>
+            <div class="product-row">
+                <div class="product">
+                    <img src="lemari1.jpg" alt="Classic Wooden Wardrobe" onclick="openModal('lemari1.jpg', 'Classic Wooden Wardrobe', 'A spacious wardrobe crafted from premium wood, offering elegant storage solutions.', ['lemari1.jpg', 'lemari1_3.jpg', 'lemari1_4.jpg', 'lemari1_5.jpg', 'lemari1_6.jpg', 'lemari1_7.jpg'])">
+                    <p>Classic Wooden Wardrobe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content-container">
+            <div class="modal-left">
+                <img class="modal-image" id="modalImage" src="" alt="">
+                <div class="modal-thumbnails" id="modalThumbnails"></div>
+            </div>
+            <div class="modal-description">
+                <h3 id="modalTitle"></h3>
+                <p id="modalText"></p>
+            </div>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+    <script>
+        // Open Modal Function
+        function openModal(imageSrc, title, description, thumbnails) {
+            const modal = document.getElementById('productModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalText = document.getElementById('modalText');
+            const modalThumbnails = document.getElementById('modalThumbnails');
+    
+            modal.style.display = 'flex';
+            modalImage.src = imageSrc;
+            modalTitle.textContent = title;
+            modalText.textContent = description;
+    
+            // Generate thumbnails
+            modalThumbnails.innerHTML = '';
+            thumbnails.forEach((thumb) => {
+                const img = document.createElement('img');
+                img.src = thumb;
+                img.classList.add('thumbnail');
+                img.onclick = () => (modalImage.src = thumb); // Change main image on click
+                modalThumbnails.appendChild(img);
+            });
+        }
+    
+        // Close modal function
+        function closeModal() {
+            const modal = document.getElementById("productModal");
+            modal.style.display = "none";
+        }
+    
+        // Add event listener to close modal when clicking outside modal content
+        document.getElementById('productModal').addEventListener('click', function (event) {
+            const modalContent = document.querySelector('.modal-content-container');
+            if (!modalContent.contains(event.target)) {
+                closeModal();
+            }
+        });
+    </script>    

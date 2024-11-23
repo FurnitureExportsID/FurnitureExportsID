@@ -1,0 +1,124 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('kayu4.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff5733;
+}
+
+/* Unified Container Styling */
+.about-contact-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styling */
+.about-section {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Information Section */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contact Info Text */
+.contact-info-text {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #333;
+    text-align: left;
+    max-width: 400px;
+}
+
+/* Contact Links Styling */
+.contact-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+}
+
+.contact-links a {
+    color: #007bff;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info-text, .contact-links {
+        max-width: 100%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - CV. Kalika Integraha</title>
+    <link rel="stylesheet" href="Projects.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h1>Our Projects</h1>
+        <p>Since our establishment, CV. Kalika Integraha has been trusted by international clients, particularly in Japan, as a reliable provider of high-quality furniture. We take pride in bringing the best of Indonesia to the global market, consistently meeting our clients' expectations with products that blend art and durability. Every shipment represents our commitment to showcasing the natural beauty of Indonesia worldwide.</p>
+        
+        <!-- Portfolio Slider -->
+        <div class="slider">
+            <div class="slides">
+                <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+                <div class="slide" style="background-image: url('project1.jpg');"></div>
+                <div class="slide" style="background-image: url('project3.jpg');"></div>
+                <div class="slide" style="background-image: url('about1.jfif');"></div>
+                <div class="slide" style="background-image: url('stuffing.jfif');"></div>
+                <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <p class="promo-text">Bringing Indonesian craftsmanship to Japan’s shores. Our unique, durable, and stylish furniture is designed to blend tradition with modernity, making it the perfect choice for discerning customers worldwide.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Slide Functionality -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        showSlide(currentSlide);
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === n ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-slide every 10 seconds
+        setInterval(nextSlide, 10000);
+    </script>
+</body>
+</html>
